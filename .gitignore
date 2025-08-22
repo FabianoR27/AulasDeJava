@@ -1,0 +1,38 @@
+# =======================================
+# Arquivos e pastas comuns em projetos Java
+# =======================================
+
+# Compilados de classes e pacotes
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+*.swp
+
+# =======================================
+# IntelliJ IDEA
+# =======================================
+.idea/
+*.iml
+*.iws
+out/
+
+# =======================================
+# Eclipse
+# =======================================
+.project
+.classpath
+.settings/
+bin/
+
+# =======================================
+# VS Code
+# =======================================
+.vscode/
+.history/
