@@ -8,22 +8,28 @@ public class Conta {
 
     // comportamentos ou métodos
     // Depositar
-    void deposita(double valor) {
+    public void deposita(double valor) {
         this.saldo += valor;
+        this.descontaTarifa();
     }
 
     // Sacar
-    void saca (double valor) {
+    public void saca (double valor) {
         this.saldo -= valor;
     }
 
+    // descontar tarifa
+    private void descontaTarifa() {
+        this.saldo -= 0.1;
+    }
+
     // imprime extrato
-    void imprimeExtrato() {
+    public void imprimeExtrato() {
         System.out.println("Saldo Atual: " + this.saldo);
     }
 
     // Saldo disponível
-    double consultaSaldoDisponivel() {
+    public double consultaSaldoDisponivel() {
         return this.saldo + this.limite;
     }
 }
