@@ -1,4 +1,4 @@
-package ExercicioHeranca;
+package AtividadeP1Banco;
 
 public class Gerente extends Funcionario {
     private String usuario;
@@ -23,7 +23,7 @@ public class Gerente extends Funcionario {
     //método para calcular bônus de 15% do gerente
     @Override // sobre-escreve o método da superclasse Funcionario para calcular o bônus do gerente
     public double calculaBonusSalario() {
-        return this.getSalario() * 0.6 + 100;
+        return this.getSalario() * 0.65 + 100;
     }
 
     // método para imprimir os dados do gerente
